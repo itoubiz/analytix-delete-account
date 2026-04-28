@@ -5,41 +5,117 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Suppression de compte - Analytix</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 40px auto; max-width: 760px; line-height: 1.6; padding: 0 16px; color: #1f2937; }
-    h1, h2 { color: #111827; }
-    .box { background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 10px; padding: 16px; margin: 16px 0; }
+    :root {
+      --bg: #f5f7fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --primary: #2e7d32;
+      --border: #e5e7eb;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 860px;
+      margin: 32px auto;
+      padding: 0 16px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 16px;
+    }
+    h1, h2 { margin-top: 0; }
+    h1 { color: var(--primary); }
+    .path {
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      border-radius: 8px;
+      padding: 12px;
+      font-weight: bold;
+    }
+    a { color: #1565c0; word-break: break-all; }
+    ul { padding-left: 20px; }
+    .muted { color: var(--muted); }
+    hr { border: none; border-top: 1px solid var(--border); margin: 24px 0; }
   </style>
 </head>
 <body>
-  <h1>Suppression de compte – Analytix</h1>
-  <p>Vous pouvez supprimer votre compte directement depuis l’application Analytix.</p>
+  <main class="container">
+    <section class="card">
+      <h1>Suppression de compte – Analytix</h1>
+      <p>Vous pouvez supprimer votre compte directement depuis l’application Analytix.</p>
 
-  <div class="box">
-    <strong>Chemin dans l’application :</strong><br />
-    Compte ou Profil → Supprimer mon compte → Confirmation
-  </div>
+      <div class="path">
+        Chemin : Compte ou Profil → Supprimer mon compte → Confirmation
+      </div>
+    </section>
 
-  <h2>Effets de la suppression</h2>
-  <ul>
-    <li>Suppression du profil utilisateur</li>
-    <li>Suppression du compte d’authentification</li>
-    <li>Suppression des données liées au compte dans l’application</li>
-  </ul>
+    <section class="card">
+      <h2>Effets de la suppression</h2>
+      <ul>
+        <li>Suppression du profil utilisateur.</li>
+        <li>Suppression du compte d’authentification.</li>
+        <li>Suppression des données liées au compte dans l’application.</li>
+      </ul>
+      <p>La suppression est définitive et entraîne la déconnexion automatique.</p>
+    </section>
 
-  <p>La suppression est définitive et vous déconnecte automatiquement.</p>
+    <section class="card">
+      <h2>Données potentiellement conservées</h2>
+      <p>
+        Certaines informations minimales peuvent être conservées pour des obligations légales,
+        de sécurité et de prévention de fraude (journal d’audit interne).
+      </p>
+      <p><strong>Délai :</strong> suppression appliquée immédiatement après confirmation.</p>
+    </section>
 
-  <h2>Conservation minimale</h2>
-  <p>Des informations minimales peuvent être conservées pour des obligations légales, sécurité et anti-fraude.</p>
+    <section class="card">
+      <h2>Liens utiles</h2>
+      <p>
+        <strong>Politique de confidentialité :</strong><br />
+        <a href="https://itoubiz.github.io/analytix-delete-account/privacy-policy.htmly" target="_blank" rel="noopener">
+          https://itoubiz.github.io/analytix-delete-account/privacy-policy.html
+        </a>
+      </p>
+      <p>
+        <strong>Support :</strong><br />
+        <a href="mailto:support@analytix.app">support@analytix.app</a>
+      </p>
+    </section>
 
-  <h2>Délai</h2>
-  <p>Le traitement est immédiat après confirmation dans l’application.</p>
+    <hr />
 
-  <h2>Support</h2>
-  <p>Email : support@analytix.app</p>
+    <section class="card">
+      <h1>Account Deletion – Analytix</h1>
+      <p>You can delete your account directly in the Analytix app.</p>
+      <p><strong>Path:</strong> Account or Profile → Delete my account → Confirm</p>
 
-  <hr />
-  <h1>Account Deletion – Analytix</h1>
-  <p>You can delete your account directly from the Analytix app.</p>
-  <p><strong>Path:</strong> Account or Profile → Delete my account → Confirm</p>
+      <h2>What gets deleted</h2>
+      <ul>
+        <li>User profile data.</li>
+        <li>Authentication account.</li>
+        <li>Account-related app data.</li>
+      </ul>
+
+      <h2>Useful links</h2>
+      <p>
+        <strong>Privacy Policy:</strong><br />
+        <a href="https://itoubiz.github.io/analytix-delete-account/privacy-policy.html" target="_blank" rel="noopener">
+          https://itoubiz.github.io/analytix-delete-account/privacy-policy.html
+        </a>
+      </p>
+    </section>
+
+    <p class="muted">Dernière mise à jour : 2026-04-28</p>
+  </main>
 </body>
 </html>
